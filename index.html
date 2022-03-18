@@ -11,19 +11,29 @@
 <body>
     <div class="mainContainer">
         <div class="header">
-            <div class="textHeader">Etch-a-Sketch!</div>
+            <h1 class="textHeader">Etch-a-Sketch!</h1>
             <div class="subTextHeader">Draw what you want, the way you want!</div>
-            <div class="buttonsContainer">
-                <button class="buttomStyle" id="blackColor">Black</button>
-                <button class="buttomStyle" id="pickAColor">Pick a color</button>
-                <button class="buttomStyle" id="rainbow">Rainbow</button>
-                <button class="buttomStyle" id="eraser">Eraser</button>
-            </div>
-            <div class="sizeSliderContainer">
-                <input type="range" min="15" max="64" value="50" class="slider">
-            </div>
         </div>
-        <div id="paintingGrid"></div>
+        <div class="sliderButtonsAndGrid">
+            <div class="buttonsContainer">
+                <div class="colorButtons">
+                    <button class="buttonStyle" id="blackColor">Black</button>
+                    <button class="buttonStyle" id="eraser">Eraser</button>
+                    <button class="buttonStyle" id="rainbow">Rainbow</button>
+                </div>
+                    <div class="utilityButtons">
+                    <button class="buttonStyle" id="reset">Reset</button>
+                </div>
+                
+            </div>
+            <div id="paintingGrid" class="changeGrid"></div>
+            <div class="sizeSliderContainer">
+                <input type="range" min="16" max="48" value="16" class="slider" id="slider">
+             
+            </div>
+            <div id="sliderText">Grid size is 16x16</div>
+        </div>    
+        
     </div>
     
 </body>
