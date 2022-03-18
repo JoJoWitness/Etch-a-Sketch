@@ -117,6 +117,16 @@ body{
     cursor: pointer; 
     border-radius: 50px;
 }
+
+.slider::-webkit-range-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #E3B7F5;
+    cursor: pointer; 
+    border-radius: 50px;
+}
 #sliderText{
     font-size: 25px;
     font-family:Arial, Helvetica, sans-serif;
